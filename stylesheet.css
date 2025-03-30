@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    justify-content: center;
+    justify-content: space-between; /* Changed from center to space-between */
     margin: 0;
     position: fixed;
     align-items: center;
@@ -26,22 +26,22 @@ header {
     background-color: #DC1414;
     z-index: 100;
     padding: 10px 5px;
-    flex-direction: column;
+    /* Removed flex-direction: column; */
 }
 
 header h1 {
     position: relative;
-    margin-right: 0;
+    margin-right: auto; /* Changed from 0 to auto */
     padding-left: 5px;
     font-weight: normal;
-    margin-bottom: 5px;
+    margin-bottom: 0; /* Changed from 5px to 0 */
     font-size: 16px;
 }
 
 .menu {
-    right: 10px;
+    /* Removed right: 10px; */
     position: relative;
-    width: 100%;
+    width: auto; /* Changed from 100% to auto */
     height: auto;
     background-color: transparent;
     text-align: center;
@@ -53,8 +53,8 @@ header h1 {
     padding-right: 0;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end; /* Changed from center to flex-end */
+    width: auto; /* Changed from 100% to auto */
 }
 
 .navbar > div {
@@ -156,9 +156,13 @@ hr {
     }
     header{
         padding: 0 5px 0 10px;
+        flex-direction: column; /* Added */
+        justify-content: center; /* Added */
     }
     header h1{
         font-size: 18px;
+        margin-right: 0; /* Added */
+        margin-bottom: 5px; /* Added */
     }
     .navbar > div > a{
         font-size: 16px;
@@ -168,6 +172,13 @@ hr {
     }
     #info > h3{
         font-size: 20px;
+    }
+    .navbar {
+        justify-content: center; /* Added */
+        width: 100%; /* Added */
+    }
+    .menu {
+        width: 100%; /* Added */
     }
 }
 
