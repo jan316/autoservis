@@ -1,0 +1,219 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Nunito, Tahoma, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    justify-content: center;
+    margin: 0;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    background-color: #DC1414;
+    z-index: 100;
+    padding: 10px 5px;
+    flex-direction: column;
+}
+
+header h1 {
+    position: relative;
+    margin-right: 0;
+    padding-left: 5px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.menu {
+    right: 10px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 5px;
+    padding-right: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar > div {
+    padding: 5px 0;
+    display: inline-block;
+    width: auto;
+}
+
+.navbar > div > a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: block;
+}
+
+.navbar > div > a:hover {
+    color: white;
+}
+
+#home {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    width: 100%;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#info {
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 0;
+}
+
+#info > h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#info > h3 {
+    font-size: 25px;
+    padding: 0;
+    margin: 10px 10px 20px;
+}
+
+#info > a {
+    text-decoration: none;
+    color: #DC1414;
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#services .card {
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+hr {
+    border: 15px solid #dc1414;
+    opacity: 1;
+}
+
+#example > h2 {
+    text-align: center;
+}
+
+#example > p {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#contact {
+    background-color: #dc1414;
+}
+
+#contact > .container > h2 {
+    color: white;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+    .menu {
+        position: relative;
+    }
+    header{
+        padding: 0 5px 0 10px;
+    }
+    header h1{
+        font-size: 18px;
+    }
+    .navbar > div > a{
+        font-size: 16px;
+    }
+    #info > h2{
+        font-size: 30px;
+    }
+    #info > h3{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 395px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 5px;
+        justify-content: center;
+    }
+    header h1 {
+        margin-bottom: 5px;
+        font-size: 16px;
+        padding-left: 5px;
+        margin-right: 0;
+    }
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar {
+        padding-right: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    .navbar > div {
+        display: inline-block;
+        width: auto;
+        padding: 5px 0;
+    }
+    .navbar > div > a {
+        font-size: 14px;
+        display: block;
+        padding: 5px;
+    }
+}
+
+#contact iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 7px;
+}
